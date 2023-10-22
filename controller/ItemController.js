@@ -1,5 +1,5 @@
 import {ItemModel} from "../model/ItemModel.js";
-import {item_db} from "../db/db.js";
+import {customer_db, item_db} from "../db/db.js";
 
 var row_index = null;
 
@@ -71,4 +71,17 @@ $("#item_table-body").on("click", "tr", function() {
     $("#description").val(description);
     $("#price").val(price);
     $("#item_qty").val(item_qty);
+});
+$("#item-search").on('input',() =>{
+    let search_item = $('#item-search').val();
+    let result = item_db.filter((item) =>
+        item.description.toLowerCase().startsWith(search_item.toLowerCase()) ||
+        item.price.toLowerCase().startsWith(search_item.toLowerCase()) ||
+        item.item_qty.toLowerCase().startsWith(search_item.toLowerCase())
+    );
+    $('#item_table-body').empty();
+    result.map((item, index) => {
+        let record = `<tr><td class="item_code">${item.item_code}</td><td class="description">${item.description}</td><td class="price">${item.price}</td><td class="item_qty">${item.item_qty}</td></tr>`;
+        $("#item_table-body").append(record);
+    });
 });
