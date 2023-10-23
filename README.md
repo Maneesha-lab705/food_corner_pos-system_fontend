@@ -1,5 +1,5 @@
-Sitemap:https://www.gloomaps.com/2qE2w6vitf
+site map :https://www.gloomaps.com/tcWyCGchdx
 
-Wireframe:https://drive.google.com/file/d/1NhDScfLdrH3mbPdbJfECYn1L2cKk-u2A/view?usp=drive_link
+wire frame:https://drive.google.com/file/d/1K_K7DBalbXT3GEfKcwYC0EZ3dHs_9VTg/view?usp=drive_link
 
-Mockups: https://www.figma.com/file/BpkGWBmjDPFOfnbTj2AZRs/posSystem?type=design&node-id=0%3A1&mode=design&t=UaBGlQT9si7fGwB6-1
+mockup:https://www.figma.com/file/xxESfLlDoXwfZ4v50GmKBX/Untitled?type=design&node-id=16%3A205&mode=design&t=Fwis9CcfYd4JcSRw-1
