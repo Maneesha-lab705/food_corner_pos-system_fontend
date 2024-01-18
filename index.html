@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>POS</title>
-    <meta name="keywords" content="HTML,CSS,Java Script, Pos System,malshi">
+    <meta name="keywords" content="HTML,CSS,Java Script, Pos System,maneesha">
     <meta name="description" content="Pos System details and my Pos System website.">
     <meta name="revised" content="01/08/2023">
     <meta name="author" content="Malshi Sathsarani">
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body>
-
 <div class="container" id="login-section">
     <div class="row" id="row">
         <div class="col col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
@@ -170,24 +169,24 @@
         <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 data">
             <form>
                 <div class="mb-3">
-                    <input class="form-control-input input" id="customer_id" type="text" required>
-                    <label for="customer_id" class="form-label">Customer_Id</label>
+                    <input class="form-control-input input" id="customer_id" type="text" placeholder="enter id" required>
+<!--                    <label for="customer_id" class="form-label">Customer_Id</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="name" class="form-control-input input" type="text" required>
-                    <label class="form-label" for="name">Name</label>
+                    <input id="name" class="form-control-input input" type="text" placeholder="enter name" required>
+<!--                    <label class="form-label" for="name">Name</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="address" class="form-control-input input" type="text" required>
-                    <label class="form-label" for="address">Address</label>
+                    <input id="address" class="form-control-input input" type="text" placeholder="enter address" required>
+<!--                    <label class="form-label" for="address">Address</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="email" class="form-control-input input" type="email" required>
-                    <label class="form-label" for="email">E-mail</label>
+                    <input id="email" class="form-control-input input" type="email" placeholder="enter email" required>
+<!--                    <label class="form-label" for="email">E-mail</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="phone" class="form-control-input input" type="text" required>
-                    <label class="form-label" for="phone">Contact Number</label>
+                    <input id="phone" class="form-control-input input" type="number" placeholder="enter contact" required>
+<!--                    <label class="form-label" for="phone">Contact Number</label>-->
                 </div>
                 <div class="mt-4 mb-5" id="customer-batons">
                     <button type="button" class="btn btn-success">Save</button>
@@ -226,20 +225,20 @@
         <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 data">
             <form>
                 <div class="mb-3">
-                    <input class="form-control-input input" id="item_code" type="text" required>
-                    <label for="item_code" class="form-label">Code</label>
+                    <input class="form-control-input input" id="item_code" type="text" placeholder="enter code" required>
+<!--                    <label for="item_code" class="form-label">Code</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="description" class="form-control-input input" type="text" required>
-                    <label class="form-label" for="description">Description</label>
+                    <input id="description" class="form-control-input input" type="text" placeholder="enter description" required>
+<!--                    <label class="form-label" for="description">Description</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="price" class="form-control-input input" type="number" required>
-                    <label class="form-label" for="price">Price</label>
+                    <input id="price" class="form-control-input input" type="number" placeholder="enter price" required>
+<!--                    <label class="form-label" for="price">Price</label>-->
                 </div>
                 <div class="mb-3">
-                    <input id="item_qty" class="form-control-input input" type="number" required>
-                    <label class="form-label" for="item_qty">Qty</label>
+                    <input id="item_qty" class="form-control-input input" type="number" placeholder="enter qty" required>
+<!--                    <label class="form-label" for="item_qty">Qty</label>-->
                 </div>
                 <div class="mt-4 mb-5" id="item-batons">
                     <button id="submit" type="button" class="btn btn-success">Save</button>
@@ -269,11 +268,11 @@
 
 <div id="order-section" class="container">
     <div class="col">
-        <h1 class="title1">Place Order</h1>
+        <h1 class="title">Place Order</h1>
     </div>
     <div class="row">
         <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 data" >
-            <u class="topic"><h3 class="title1">Invoice Data</h3></u>
+            <u class="topic"><h3 >Invoice Data</h3></u>
             <form>
                 <div class="mb-3">
                     <input id="orderId" class="form-control-input" type="text" required>
@@ -284,32 +283,24 @@
                     <label for="date" class="form-label">Order Date</label>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control-input" id="selectCusID" type="text" required>
+                    <input class="form-control-input" id="customer-id" type="text" required>
+                    <!--                    <input class="form-control-input" id="selectCusID" type="checkbox" required>-->
+                    <select name="customer_id" id="selectCusID">Customer Id</select>
                     <label for="selectCusID" class="form-label">Customer Id</label>
                 </div>
                 <div class="mb-3">
                     <input id="name-order" class="form-control-input" type="text" required>
-                    <label class="form-label" for="name">Name</label>
-                </div>
-                <div class="mb-3">
-                    <input id="address-order" class="form-control-input" type="text" required>
-                    <label class="form-label" for="address">Address</label>
-                </div>
-                <div class="mb-3">
-                    <input id="email-order" class="form-control-input" type="email" required>
-                    <label class="form-label" for="email">E-mail</label>
-                </div>
-                <div class="mb-3">
-                    <input id="phone-order" class="form-control-input" type="text" required>
-                    <label class="form-label" for="phone">Contact Number</label>
+                    <label class="form-label" for="name-order">Name</label>
                 </div>
             </form>
         </div>
         <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 data">
-            <u class="topic"><h3 class="title1" >Item Details</h3></u>
+            <u class="topic"><h3 >Item Details</h3></u>
             <form>
                 <div class="mb-3">
-                    <input class="form-control-input" id="itemCode" type="text" required>
+                    <!--                    <input class="form-control-input" id="itemCode" type="text" required>-->
+                    <select name="item_code" id="itemCode">Item Code</select>
+                    <input class="form-control-input" id="item-Code" type="text" required>
                     <label for="itemCode" class="form-label">Item Code</label>
                 </div>
                 <div class="mb-3">
@@ -336,23 +327,22 @@
         <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 data">
             <form>
                 <div class="mb-3">
-                    <span class="total" id="total-text">Total : </span>
-                    <span id="total">00.0</span> <span class="unit">Rs/=</span>
+                    <span id="total-text">Total : </span>
+                    <input id="total" class="form-control-input" type="number" required>
                 </div>
-                <div class="mb-3">
-                    <input id="cash" class="form-control-input" type="number" required>
-                    <label class="form-label" for="cash">Cash</label>
-                </div>
-                <div class="mb-3">
-                    <input id="balance" class="form-control-input" type="number" required>
-                    <label class="form-label" for="balance">Balance</label>
-                </div>
-                <div class="mt-4 mb-5">
+                <!--                <div class="mb-3">-->
+                <!--                    <input id="cash" class="form-control-input" type="number" required>-->
+                <!--                    <label class="form-label" for="cash">Cash</label>-->
+                <!--                </div>-->
+                <!--                <div class="mb-3">-->
+                <!--                    <input id="balance" class="form-control-input" type="number" required>-->
+                <!--                    <label class="form-label" for="balance">Balance</label>-->
+                <!--                </div>-->
+                <div class="mt-4 mb-5" id="place-order">
                     <button type="button" class="btn btn-success">Place Order</button>
                 </div>
             </form>
         </div>
-        <!--        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">-->
         <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="height:180px; overflow-y: scroll">
             <table class="table table-bordered text-white">
                 <thead class="bg-primary">
@@ -434,6 +424,7 @@
         $('#item-section').css('display', 'none');
         $('#order-section').css('display', 'block');
         $('.navbar').css('display', 'block');
+        $('body').css('background-color', 'black');
     });
 
     $('#dashboard_nav').on('click', () =>{
@@ -442,7 +433,7 @@
         $('#customer-section').css('display', 'none');
         $('#item-section').css('display', 'none');
         $('#order-section').css('display', 'none');
-        $('.navbar').css('display', 'block');
+
     })
 </script>
 </body>

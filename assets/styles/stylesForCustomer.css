@@ -20,7 +20,7 @@ body{
     border: 0;
     border-bottom: 2px solid red;
     outline: 0;
-    font-size: 1.3rem;
+    font-size: 0.1rem;
     color: red;
     padding: 7px 0;
     background: transparent;
@@ -33,7 +33,7 @@ body{
     border: 0;
     border-bottom: 2px solid red;
     outline: 0;
-    font-size: 1.3rem;
+    font-size: 0.5rem;
     color: red;
     padding: 7px 0;
     background: transparent;
